@@ -1,4 +1,4 @@
-package magento.Pages;
+package magento.pages;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -9,10 +9,10 @@ public class CatalogPage {
     public SelenideElement getElementByText(String text){
         return $(byText(text));
     }
-    public SelenideElement size =  $("[id=\"option-label-size-143-item-170\"]");
-    public SelenideElement color =  $("[id=\"option-label-color-93-item-60\"]");
-    public SelenideElement btnCatalog =  $("[class=\"action tocart primary\"]");
+    public SelenideElement size =  $("#option-label-size-143-item-170");
+    public SelenideElement color =  $("#option-label-color-93-item-60");
+    public SelenideElement btnCatalog =  $("[class='action tocart primary']");
     public SelenideElement showCart = $("[class='action showcart']");
-    public SelenideElement viewCart = $("[class=\"action viewcart\"]");
+    public SelenideElement viewCart = $("[class='action viewcart']");
 
 }
